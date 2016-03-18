@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <style>
+        .corazon {
+            margin: 20em;
+            position: relative;
+            width: 200px;
+            height: 200px;
+            transform: rotate(45deg);
+            background-color: black;
+        }
+        .corazon:before,
+        .corazon:after {
+            position: absolute;
+            width: 200px;
+            height: 200px;
+            content: '';
+            border-radius: 50%;
+            background-color: black;
+        }
+        .corazon:before{
+            bottom: 0px;
+            left: -100px;
+        }
+        .corazon:after{
+            top: -100px;
+            right: 0px;
+        }
+    </style>
+</head>
+<body>
+<div class="corazon"></div>
+
+</body>
+</html>
